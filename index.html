@@ -11,64 +11,77 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </head>
 
-<body>
-
-  <!---maken van navigatiebar
-  <nav>
-    <ul>
-      <li><a href="#header">Bio</a></li>
-      <li><a href="#cv">CV</a></li>
-      <li><a href="#project">Projceten</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-  -->
-
-  <!--sticky navigatiebar maken via javascript-->
-  <div id="navigatiebar">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-      <a class="navbar-brand" href="#">Logo</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="#header">Bio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#cv">CV</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#projceten">Projceten</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </div>
-
-  <div class="container-fluid">
-    <section class="row" id="header" style="height: 100vh; width: 100vw;" >
-      <div class="col">
-            <img class='profielfoto' src="FOTO.jpg" alt="photo of my" style="border: radius 20px;">
-            <p style="text-align: center;">Mijn naam is Owen Van Roy, ik studeer industrieel ontwerpen,</p>
-            <p style="text-align: center;">ik heb een grote passie voor ontwerpen en design. Mijn hobby's zijn basketbal en 3D-printen.
-            </p>        
+<body id="layer_2">
+  <!--<img src="images/BACKGROUND_donker.jpg" alt="background" class="backgroundfoto">-->
+    <div id="navigatiebar">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <a class="navbar-brand" href="#">Logo</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#header">Bio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projectennav">Projecten</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="product_fotografie.html">Grafische ontwerpcommunicatie</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="robot.html">Robot</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#cv">Curriculum Vitea</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
         </div>
+      </nav>
+    </div>
+
+  <div class="container-fluid" id="layer_1">
+    <div class="row" id="hoogte">
+      <div class="row" id="header">
         <div class="col">
-          <h2 class="titel"  style="text-align: center;">Portfolio</h2>
-              <p  style="text-align: center;">A website created by Owen Van Roy
-              </p>
+          <p>Hallo, ik ben Owen Van Roy.</p>
         </div>
       </div>
-    </section>
+    </div>
+    <div class="row">
+      <div class="row" id="projectennav">
+        <p class="onderdeel">- Projects -</p>
+        <hr>
+        <p class="quote">“Design isn't just about aesthetics, it's about solving problems elegantly.”</p>
+      </div>
+      <div class="row" id="projecten_row">
+        <div class="col-md-6">
+          <div class="image-container">
+            <a href="lamp.html"><img src="images/lamp/228.png" alt="bureaulamp" id="eerstevoorbeeldlinks" class="picture"></lamp></a>
+            <a href="speaker.html"><img src="images/speaker/240.png" alt="speaker" id="voorbeeldfoto" class="picture"></a>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="image-container">
+            <a href="multicoocker.html"><img src="images/multicooker/143.png" alt="multicooker" id="eerstevoorbeeld" class="picture"></a>
+            <a href="samsung.html"><img src="images/brainbud/38.png" alt="brainbud" id="voorbeeldfoto" class="picture"></a>
 
-        <!--derde versie van cv-->
-    <section class="row justify-content-center" id="cv" style="width: 100vw;">
-      <div class="col-12 col-md-9 mx-auto" style="margin-top: 10vh; margin-bottom: 5vh">
+          </div> 
+        </div>
+      </div>
+    </div>
+    <div class="row" id="hoogte">
+      <div class="row"  id="cv">
+        <p class="onderdeel">- Curriculum Vitea -</p>
+        <hr>
+        <p class="quote">"A design isn't truly complete until it becomes an experience."</p>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-9 mx-auto" style="margin-top: 10vh; margin-bottom: 5vh">
         <div class="accordion accordion-flush" id="accordionFlushExample">
           <div class="accordion-item">
             <h2 class="accordion-header" id="flush-headingOne">
@@ -111,9 +124,9 @@
                     <li class="tekst">Vierstraete Trucks</li>
                   </ul>
                   <h5 class="datum">Dec 2020:</h5>
-                   <ul>
+                  <ul>
                       <li class="tekst">Vierstraete Trucks</li>
-                   </ul>
+                  </ul>
 
                   <h5 class="datum">Jul – Aug 2020:</h5>
                     <ul>
@@ -148,90 +161,37 @@
                     <li>Solid edge</li>
                     <li>Autocad Vred</li>
                     <li>Affinity Photo, Designer, Publischer</li>
+                    <li>HTML, CSS</li>
                   </ul>
               </div>
             </div>
           </div>
         </div>
+      </div></div>
+    </div>
+
+    <div class="row" id="hoogte">
+      <div class="row" id="contact">
+        <div class="row">      
+          <p class="onderdeel">- Contact -</p>
+          <hr>
+          <p class="quote">"Design is the bridge between ideas and reality."</p></div>
+          <p class="email_a">owen.vanroy@ugent.be</p> 
       </div>
-    </section>
-    
-
-
-    <section class="row justify-content-center" id="projceten" style="width: 100vw;">
-      <div class="row" id="Projecten">
-            <h1 class="titel">Projecten</h1>
-            <div style="position: relative;">
-                <a href="lamp.html">
-                    <img src="images/PREVIEW/PREVIEW LAMP.jpg" alt="Lamp" style="width: 100%; border-radius: 20px;">
-                  </a>
-                <div style="position: absolute; top: 50%; left: 80%; transform: translate(-50%, -50%); text-align:right; font-size: 20px; ">
-                  <P>Lamp</P>
-                </div>
-              </div><br>
-      </div>  
-
-      <div class="row" id="Projecten">
-            <div style="position: relative;">
-                <a href="multicoocker.html">
-                  <img src="images/PREVIEW/PREVIEW WATERKOKER.jpg" alt="SCHUIVER" style="width: 100%; border-radius: 20px;"></a>
-                <div style="position: absolute; top: 50%; left: 80%; transform: translate(-50%, -50%); text-align:right; font-size: 20px;">
-                  <P>Multicoocker</P>
-                </div>
-              </div><br>
-      </div>
-
-      <div class="row" id="Projecten">
-            <div style="position: relative;">
-                <a href="cornelbox.html">
-                  <img src="images/PREVIEW/PREVIEW CORNEL.jpg" alt="Cornelbox" style="width: 100%; border-radius: 20px;"></a>
-                <div style="position: absolute; top: 50%; left: 80%; transform: translate(-50%, -50%); text-align:right; font-size: 20px;">
-                  <P>Cornelbox</P>
-                </div>
-              </div><br>
-      </div>
-
-      <div class="row" id="Projecten">
-            <div style="position: relative;">
-                <a href="speaker.html">
-                  <img src="images/PREVIEW/PREVIEW SPEAKER.jpg" alt="Speaker" style="width: 100%; border-radius: 20px;"></a>
-                <div style="position: absolute; top: 50%; left: 80%; transform: translate(-50%, -50%); text-align:right; font-size: 20px;">
-                  <P>Speaker</P>
-                </div>
-              </div><br>
-      </div>
-
-      <div class="row" id="Projecten">
-              <div style="position: relative;">
-                <a href="product_fotografie.html">
-                  <img src="images/PREVIEW/PREVIEW SCHOEN.jpg" alt="SCHUIVER" style="width: 100%; border-radius: 20px;"></a>
-                <div style="position: absolute; top: 50%; left: 80%; transform: translate(-50%, -50%); text-align:right; font-size: 20px;">
-                  <P>Product Fotografie</P>
-                </div>
-              </div><br>
-          </div>
-      </div>
-    </section>
-
-        
-    <section class="row justify-content-center" id="contact" style="width: 100vw;">
-      <div class="col-md-6">
-        <h1 class="titel">Contact</h1>
-        <p>owen.vanroy@ugent.be</p>
-        <form>
-          <div class="form-group">
-            <label for="exampleInputEmail1">Direct Question:</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-          </div>
-          <div class="form-group">
-            <input type="question" class="form-control" id="exampleInput" placeholder="I have a question">
-          </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
-      </div>
-    </section>
-    
+      <form>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Question</label>
+          <input type="question" class="form-control" id="exampleInputPassword1" placeholder="What is your question">
+        </div>
+        <br>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
   </div>
+
 </body>
 </html>

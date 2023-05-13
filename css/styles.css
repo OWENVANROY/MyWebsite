@@ -1,25 +1,20 @@
+/*hoofdpagina layout_______________________________________________________________________________________________________*/
+
+.backgroundfoto{
+  max-width: 100vw;
+  scroll-behavior: smooth;
+  position: fixed;
+  z-index: -999;
+}
+
 * {
   box-sizing: border-box;
 }
  .profielfoto{ 
   width: 20vw;
   border-radius: 40%;
+  align-items: center;
  }
-
-
-
-.card li{
-  font-size: small;
-  text-align: left;
-}
-
-.card{
-  text-align: left;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-right: 0%;
-  margin-left: 0%;  
-}
 
 .container-fluid {
   padding: 0%;
@@ -32,29 +27,24 @@
   margin-top: 20px;
   margin-bottom: 20px;
   border-radius: 20px
-  
 }
+
+.row justify-content-center::-webkit-scrollbar{
+  display: none;
+}
+
+
 /* Style the body */
 body {
   font-family: Arial, Helvetica, sans-serif;
-  margin: 0;
-  background-color: #3e4b50; 
+  background-color: #0f0f0f;
+  background-image: url('BACKGROUND_donker.jpg');
+  background-repeat: no-repeat;
+  background-size: cover; 
+  overflow-x: hidden;
 }
 
 
-
-  /* Change color on hover */
-  .navbar a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-
-  /* Change color on active */
-  .navbar a:active {
-    background-color: rgb(92, 138, 245);
-    color: black;
-  }
-  
 
 /* Column container */
 .row {  
@@ -70,21 +60,9 @@ body {
 #header{
   display: flex;
   flex-wrap: wrap;
-  background-color: #252e36;
+  background-color: #1b1b1b;
   height: 100vh;
   width: 100vw;
-  color: #aaa;
-}
-
-
-
-.main {
-  display: flex;
-  justify-content: center;
-}
-
-.hoofdtitel {
-  text-align: center;
   color: #aaa;
 }
 
@@ -94,24 +72,17 @@ body {
 }
 
 
-.inhoud {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-
-
 /* Footer */
-.footer, #contact {
+.footer{
   display: flex;
-  flex-wrap: wrap;
   width: 100vw;
   text-align: center;
-  background: 	#252e36;
+  background: 	#1b1b1b;
   color: #aaa;
 }
 
+
+/*navigatiebar___________________________________________________________________________________________________________________________________________________*/
 #navigatiebar {
   position: sticky;
   top: 0;
@@ -119,13 +90,26 @@ body {
   justify-content: space-between;
 }
 nav ul li a {
-  color: #4f2c81;
   text-decoration: none;
   padding: 10px;
   border-radius: 10px;
   margin-left: 10px;
   margin-right: 10px;
 }
+
+  /* Change color on hover */
+  .navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  /* Change color on active */
+  .navbar a:active {
+    background-color: rgb(92, 138, 245);
+    color: black;
+  }
+
+/*product fotografie____________________________________________________________________________________________________________________________________________*/
 
 #product_fotografie{
     position: absolute;
@@ -140,9 +124,11 @@ nav ul li a {
 
   .carousel-item img {
     height: 100vh; /* stelt de hoogte in op de hoogte van de viewport */
-    object-fit: cover; /* schaalt de afbeelding om de hoogte van het element te bedekken */
+    object-fit:scale-down; /* schaalt de afbeelding om de hoogte van het element te bedekken */
   }
   
+
+/*resposinve layout___________________________________________________________________________________________________________________________________________*/
 
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 700px) {
@@ -160,6 +146,145 @@ nav ul li a {
 }
 
 
+/*canvas en tekst______________________________________________________________________________________________________________________________________________*/
+.voorstelling_projecten {
+background-color:#1b1b1b;
+}
 
+.project_uitleg{
+  position: fixed;
+  color: #aaa;
+}
 
-/*tabs met slideshow_________________________________________________________________________________________________*/
+canvas {
+  width: 100%;
+  height: 100%;
+}
+/*______________________________________________________________________*/
+#eerstevoorbeeld{
+  margin-top:  200px;
+  margin-bottom: 300px;
+  margin-left: auto;
+  margin-right:  auto;
+  max-width: 60%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+#eerstevoorbeeldlinks{
+  margin-top:  0px;
+  margin-bottom: 200px;
+  margin-left: auto;
+  margin-right:  auto;
+  max-width: 60%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+#voorbeeldfoto{
+  margin-top: 150px;
+  margin-bottom: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 60%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.picture{
+  transition: transform .2s;
+}
+.picture:hover {
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1); 
+}
+
+.image-container{
+  width: 100%;
+  margin: auto;
+}
+
+#projecten_row{
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.form-group{
+  width: 70%;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#button{
+  position: fixed;
+  z-index: 999;
+  width: 10vw;
+}
+
+#knoppen{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.quote{
+  color: #aaa;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+}
+
+.onderdeel{
+  color: #767676;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 6vw;
+  font-family: fantasy;
+  margin-bottom: 0;
+  padding: 0;
+  margin-top: 10vh;
+}
+
+hr{
+  height:3px;
+  width: 100vw;
+  border-width:0;
+  color:rgb(255, 0, 0);
+  background-color:rgb(255, 0, 0);
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 10px;
+  margin-right: 10px;
+
+}
+
+#hoogte{
+  height: 100vh;
+}
+
+.form-group{
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+}
+
+.email_a{
+  text-align: center;
+  color: #aaa;
+}
+
+.btn-group{
+  margin-bottom: 50px;
+}
+
+.project_naam{
+  padding-top: 100px;
+}
