@@ -11,25 +11,72 @@
     />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css" />
-    <title>Lamp</title>
+    <title>Brainbud</title>
+
+    <style>
+      @media screen and (max-width: 1420px) {
+       #groot {
+       display: none;
+       }
+       #klein {
+       display: block;
+       }
+      }
+      
+      @media screen and (min-width: 1421px) {
+       #groot {
+       display:flexbox;
+       }
+       #klein {
+       display: none;
+       }
+      }
+      </style>
+
   </head>
 
 <body style="background-color:#1b1b1b;">
   <div class="container" >
-    <div class="row">
+    <div class="row" id="groot">
       <div class="col-md-6">
         <div class="project_uitleg" style="position: fixed; color: #aaa;">
-          <h1 class="project_naam">Multicooker</h1>
+          <h1 class="project_naam">Brainbud</h1>
           <h4>ONDERZOEKSVRAAG:</h4>
-          <p></p>
+          <p>Hoe kunnen we studenten die last hebben van concentratieproblemen helpen om zich beter
+            <br> te focussen aan de hand van een fysieke tool?</p>
           <h4>CONCEPT:</h4>
-          <p></p>
+          <p>Voor de Brainbud hebben we veel verschillende opties bekijken, maar zijn we geëindigd op 
+            <br> het manipuleren van studenten door licht en geluid. Met de Brainbud geven we de lamp een eerder
+            <br> blauwe tint tijdens het studeren omdat dit de melatonine productie onderdrukt en ervoor zorgt dat je
+            <br> alert blijft, voor het ontspannen na een lange dag van studeren voorziet de Brainbud een eerder rode
+            <br> tint die dan de productie van melatonine bevorderd waardoor je een goede nachtrust kan ervaren. 
+             <br> Verder maakt de Brainbud gebruin van whitenoise. dit gebeurt door een modulaire speaker in de voet
+             <br> van de lamp te zetten en zo kan je via de Brainbud app whitenoise selecteren.</p>
           <h4>UITWERKING:</h4>
-          <p></p>
+          <p>Voor de uitwerking van de Brainbud zijn er drie prototype sprints geweest, een vormelijke, een
+            <br> functionele en een finale. Het finale prototype is volledig ge-3D-print om de unieke vorm van de lamp te
+            <br> tonen. Hierbij zit er ook een functioneel werkende speaker in de voet.</p>
         </div>
       </div>
       <div class="col-md-6">
         <canvas class="canvas"></canvas>
+      </div>
+    </div>
+    <div class="row" id="klein">
+      <div class="col-md-6">
+        <div class="vervangafbeeldingtekst" style="color: #aaa;">
+          <h1 class="project_naam">Brainbud</h1>
+          <h4>ONDERZOEKSVRAAG:</h4>
+          <p>Hoe kunnen we studenten die last hebben van concentratieproblemen helpen om zich beter te focussen aan de hand van een fysieke tool?</p>
+          <h4>CONCEPT:</h4>
+          <p>Voor de Brainbud hebben we veel verschillende opties bekijken, maar zijn we geëindigd op het manipuleren van studenten door licht en geluid. Met de Brainbud geven we de lamp een eerder blauwe tint tijdens het studeren omdat dit de melatonine productie onderdrukt en ervoor zorgt dat je alert blijft, voor het ontspannen na een lange dag van studeren voorziet de Brainbud een eerder rode tint die dan de productie van melatonine bevorderd waardoor je een goede nachtrust kan ervaren. 
+            Verder maakt de Brainbud gebruin van whitenoise. dit gebeurt door een modulaire speaker in de voet van de lamp te zetten en zo kan je via de Brainbud app whitenoise selecteren.</p>
+          <h4>UITWERKING:</h4>
+          <p>Voor de uitwerking van de Brainbud zijn er drie prototype sprints geweest, een vormelijke, een functionele en een finale. Het finale prototype is volledig ge-3D-print om de unieke vorm van de lamp te tonen. Hierbij zit er ook een functioneel werkende speaker in de voet.</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <img src="images/brainbud/10.png" alt="braindbud" class="vervangafbeeldingtekst">
       </div>
     </div>
     <div class="row" id="knoppen">

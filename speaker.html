@@ -11,25 +11,68 @@
     />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css" />
-    <title>Lamp</title>
+    <title>Speaker</title>
+
+      <style>
+      @media screen and (max-width: 1420px) {
+       #groot {
+       display: none;
+       }
+       #klein {
+       display: block;
+       }
+      }
+      
+      @media screen and (min-width: 1421px) {
+       #groot {
+       display:flexbox;
+       }
+       #klein {
+       display: none;
+       }
+      }
+      </style>
+
   </head>
 
 <body style="background-color:#1b1b1b;">
   <div class="container" >
-    <div class="row">
+    <div class="row" id="groot">
       <div class="col-md-6">
         <div class="project_uitleg" style="position: fixed; color: #aaa;">
-          <h1 class="project_naam">Multicooker</h1>
+          <h1 class="project_naam">Speaker</h1>
           <h4>ONDERZOEKSVRAAG:</h4>
-          <p></p>
+          <p>Ontwerp een speakerkast die de basklanken van een simpele speaker versterkt.</p>
           <h4>CONCEPT:</h4>
-          <p></p>
+          <p>Het is een relatief simpel ontwerp. de speakerkast maakt gebruik van de negatieve beweging
+            <br> van de speaker om de luchtdruk in de speaker gang te veranderen. Door de gang in dit zigzag
+            <br> ontwerp te maken verleng je de afstand van de speakergang dit is voordeling voor de diepgang
+            <br> van het geluid. alle hoeken zijn afgerond omdat dit het meest gunstige is voor de luchtstroom.
+            <br> Op het einde van de speakergang is er een hoorn gemaakt die deze basklanken moet versterken</p>
           <h4>UITWERKING:</h4>
-          <p></p>
+          <p>Voor de uitwerking van dit project zijn er verschillende lagen MDF hout in deze vorm gefreesd
+            <br> en daarna tegen elkaar gelijmd. De zijpanelen zijn gemaakt van plexiglas ofwel PMMA dit is puur
+            <br> estetisch en heeft geen voordelig effect.</p>
         </div>
       </div>
       <div class="col-md-6">
         <canvas class="canvas"></canvas>
+      </div>
+    </div>
+    <div class="row" id="klein">
+      <div class="col-md-6">
+        <div class="vervangafbeeldingtekst" style="color: #aaa;">
+          <h1 class="project_naam">Speaker</h1>
+          <h4>ONDERZOEKSVRAAG:</h4>
+          <p>Ontwerp een speakerkast die de basklanken van een simpele speaker versterkt.</p>
+          <h4>CONCEPT:</h4>
+          <p>Het is een relatief simpel ontwerp. de speakerkast maakt gebruik van de negatieve beweging van de speaker om de luchtdruk in de speaker gang te veranderen. Door de gang in dit zigzag ontwerp te maken verleng je de afstand van de speakergang dit is voordeling voor de diepgang van het geluid. alle hoeken zijn afgerond omdat dit het meest gunstige is voor de luchtstroom. Op het einde van de speakergang is er een hoorn gemaakt die deze basklanken moet versterken.</p>
+          <h4>UITWERKING:</h4>
+          <p>Voor de uitwerking van dit project zijn er verschillende lagen MDF hout in deze vorm gefreesd en daarna tegen elkaar gelijmd. De zijpanelen zijn gemaakt van plexiglas ofwel PMMA dit is puur estetisch en heeft geen voordelig effect.</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <img src="images/speaker/10.png" alt="speaker" class="vervangafbeeldingtekst">
       </div>
     </div>
     <div class="row" id="knoppen">
@@ -40,7 +83,7 @@
       <div class="btn-group" role="group" aria-label="Basic example">
         <a href="samsung.html" id="button" class="btn btn-secondary">&#8249;</a>
         <a href="index.html" id="button"  class="btn btn-secondary">home</a>
-        <a href="robot.html" id="button" class="btn btn-secondary">&#8250;</a>
+        <a href="multicoocker.html" id="button" class="btn btn-secondary">&#8250;</a>
       </div>
     </div>
 	</div>

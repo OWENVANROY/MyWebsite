@@ -12,11 +12,32 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css" />
     <title>Lamp</title>
+
+    <style>
+      @media screen and (max-width: 1420px) {
+       #groot {
+       display: none;
+       }
+       #klein {
+       display: block;
+       }
+      }
+      
+      @media screen and (min-width: 1421px) {
+       #groot {
+       display:flexbox;
+       }
+       #klein {
+       display: none;
+       }
+      }
+    </style>
+
   </head>
 
 <body style="background-color:#1b1b1b;">
   <div class="container" >
-    <div class="row">
+    <div class="row" id="groot">
       <div class="col-md-6">
         <div class="project_uitleg" style="position: fixed; color: #aaa;">
           <h1 class="project_naam">LAMP</h1>
@@ -50,11 +71,24 @@
         <canvas class="canvas"></canvas>
       </div>
     </div>
-    <div class="row" id="knoppen">
-
-
-
-      
+    <div class="row" id="klein">
+      <div class="col-md-6">
+        <div class="vervangafbeeldingtekst" style="color: #aaa;">
+          <h1 class="project_naam">LAMP</h1>
+          <h4>ONDERZOEKSVRAAG:</h4>
+          <p>Ontwerp een bureaulamp en maak gebruik van de machine ter beschikking, ter wijze van inleiding van de studie industrieel ontwerpen. </p>
+          <h4>CONCEPT:</h4>
+          <p>Mijn project was het ontwerpen en produceren van een handgemaakte lamp. Ik begon met een uitgebreide ideegeneratie en brainstormsessie om mijn visie voor de lamp te ontwikkelen. Tijdens deze fase maakte ik veel verschillende schetsen en experimenteerde ik met verschillende vormen en materialen. Vervolgens ging ik aan de slag met de productie, waarbij ik gebruik maakte van diverse machines en technieken om mijn ontwerp tot leven te brengen. Ik ben nu geïnspireerd om meer unieke items te maken en mijn vaardigheden als maker verder te ontwikkelen.</p>
+          <h4>UITWERKING:</h4>
+          <p>Er werd een vormelijk prototypes gemaakt, er werden een vijf tal verschillende prototypes gemaakt. Elk met een heel verschillend stijls, hieruit werd een prototype gekozen. Daarna werd met de verschillende machines de lamp gemaakt.</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <img src="images/lamp/10.png" alt="lamp" class="vervangafbeeldingtekst">
+      </div>
+    </div>
+    </div>
+    <div class="row" id="knoppen">     
       <div class="btn-group" role="group" aria-label="Basic example">
         <a href="multicoocker.html" id="button" class="btn btn-secondary">&#8249;</a>
         <a href="index.html" id="button"  class="btn btn-secondary">home</a>
