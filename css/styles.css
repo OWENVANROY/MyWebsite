@@ -58,12 +58,13 @@ body {
 
 /* Main column */
 #header{
-  display: flex;
+  display: flexbox;
   flex-wrap: wrap;
   background-color: #1b1b1b;
   height: 100vh;
   width: 100vw;
   color: #aaa;
+  margin: 0;
 }
 
 .titel{
@@ -73,12 +74,14 @@ body {
 
 
 /* Footer */
-.footer{
+#contact{
   display: flex;
+  flex-wrap: wrap;
+  background-color: #1b1b1b;
+  height: 80vh;
   width: 100vw;
-  text-align: center;
-  background: 	#1b1b1b;
   color: #aaa;
+  margin: 0;
 }
 
 
@@ -253,32 +256,32 @@ canvas {
   margin-top: 11vh;
 }
 
+.spacing{
+  margin: 12rem;
+}
+
 hr{
   height:3px;
   width: 100vw;
   border-width:0;
   color:rgb(255, 0, 0);
   background-color:rgb(255, 0, 0);
-  margin-top: 0;
-  margin-bottom: 0;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin: 0;
+  padding: 0;
 
 }
 
 #hoogte{
   height: 100vh;
+  margin-left: 0;
+  margin-right: 0;
 }
 
-.form-group{
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 10px;
-}
 
 .email_a{
   text-align: center;
   color: #aaa;
+  size: 50;
 }
 
 .btn-group{
@@ -288,3 +291,30 @@ hr{
 .project_naam{
   padding-top: 100px;
 }
+
+.biofoto{
+  margin-left: 5vw;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 40vw;
+  border-radius: 20px;
+}
+
+/*accordion passende stijl ______________________*/
+.accordion-item{
+  color: #aaa;
+  background-color:#333638;
+}
+
+.accordion{
+  --bs-accordion-bg: #333638;
+  --bs-accordion-active-bg: #333638;
+  --bs-accordion-border-color: #333638;
+  --bs-accordion-btn-color:#aaa;
+  --bs-accordion-active-color:#aaa;
+
+}
+
+
+
