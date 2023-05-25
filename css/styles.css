@@ -111,6 +111,9 @@ nav ul li a {
     background-color: rgb(92, 138, 245);
     color: black;
   }
+  .nav-link{
+    text-align: center;
+  }
 
 /*product fotografie____________________________________________________________________________________________________________________________________________*/
 
@@ -146,6 +149,7 @@ nav ul li a {
     float: none;
     width: 100%;
   }
+
 }
 
 
@@ -293,11 +297,11 @@ hr{
 }
 
 .biofoto{
-  margin-left: 5vw;
+  margin-left: 7vw;
   margin-right: auto;
   margin-top: auto;
   margin-bottom: auto;
-  width: 40vw;
+  width: 30vw;
   border-radius: 20px;
 }
 
@@ -316,5 +320,23 @@ hr{
 
 }
 
+.homeButton{
+  position: fixed;
+  margin-top: 10px;
+  margin-left: 10px;
+  border-color: #fd0d0d;
+  border: 2px rgb(158, 221, 56);
+  /* hover: #dc3545;
+  hover-borde: #fd0d0d; */
+}
 
 
+.btn-outline-primary{
+  --bs-btn-hover-border-color: #fd0d0d;
+  position: fixed;
+  z-index: +999;
+  top: 10px;
+  left: 10px;
+  --bs-btn-border-color: #fd0d0d;
+  --bs-btn-hover-bg: #dc3545;
+}        
