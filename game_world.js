@@ -18,6 +18,7 @@ let showBalloon = false;
 canWidth = innerWidth - 1;
 canHeigt =innerHeight - 1;
 
+// Preload-functie om afbeeldingen en geluiden te laden
 function preload() {
   img = loadImage('data/city_background_night.png');
   soundFormats('mp3');
@@ -26,13 +27,16 @@ function preload() {
   failSound = loadSound('data/fail.mp3');
 }
 
+// Setup-functie voor het initialiseren van het spel
 function setup() {
   startTime = millis();
   let cityID = 2794055; // Kortrijk, België
   let apiKey = "dfb3d515d84e96bcb2391771d8882419";
   
+  // Maak een URL voor het ophalen van de weerinformatie van de stad Kortrijk.
   let url = `https://api.openweathermap.org/data/2.5/weather?id=${cityID}&appid=${apiKey}`;
-  
+
+  // Maak een HTTP-verzoek om de weerinformatie op te halen.
   httpGet(url, 'json', false, function(response) {
     weatherData = response;
     
@@ -63,7 +67,7 @@ function gotWeatherData(data) {
   weatherData = data;
 }
 
-
+//check of de vuurballen tegen de robot vliegen
 function checkCollision(myRobot, fireballs) {
   for (let fireball of fireballs) {
     let dx = (myRobot.xPos + 30) - (fireball.x + 30);
@@ -76,6 +80,7 @@ function checkCollision(myRobot, fireballs) {
   }
 }
 
+//check of de lasers de vuurbal raken
 function mouseClicked() {
   for (let i = fireballs.length - 1; i >= 0; i--) {
     let fireball = fireballs[i];
@@ -100,15 +105,15 @@ function mouseClicked() {
 function startNextLevel() {
   showNextLevel = false; // Verberg "Next Level"
   level++; // Verhoog het level
-  nextLevelTimer = setTimeout(startNextLevel, 3000);
+  nextLevelTimer = setTimeout(startNextLevel, 3000); // start next level als 3s vootbij zijn
   
 }
 
-function mouseReleased() {
+function mouseReleased() { //als muisknop niet is ingedrukt is de laser niet actief
   myRobot.laserActive = false;
 }
 
-function resetGame() {
+function resetGame() { //bij resetten van de game worden alles waarden terug op de startwaarden gezet
   counter = 0;
   level = 1;
   showNextLevel= false;

@@ -18,6 +18,8 @@ const currentFrame = (index) => `./images/brainbud/${(index + 1).toString()}.png
 
 /* nieuwe lege lijst aanmaken, waarin alle fotos in geplaatst kunnen worden*/
 const images = [];
+
+/*zorgt ervoor dat de frames op de eerste foto starten */
 let ball = { frame: 0 };
 
 

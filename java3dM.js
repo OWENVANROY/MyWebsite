@@ -14,6 +14,8 @@ const currentFrame = (index) => `./images/multicooker/${(index + 1).toString()}.
 
 /* nieuwe lege lijst aanmaken, waarin alle fotos in geplaatst kunnen worden*/
 const images = [];
+
+/*zorgt ervoor dat de frames op de eerste foto starten */
 let ball = { frame: 0 };
 
 

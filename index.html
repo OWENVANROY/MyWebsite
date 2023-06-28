@@ -191,12 +191,20 @@
   </div>
 
   <script>
-  $(document).ready(function () {
-    $('.navbar-nav .nav-link').on('click', function(){
-      $('.navbar-collapse').collapse('hide');
+    // zorgt ervoor dat het hamburgermenu sluit nadat een item is aangeklikt
+    $(document).ready(function () {
+      // Wacht tot het document volledig is geladen
+  
+      $('.navbar-nav .nav-link').on('click', function(){
+        // Wanneer er op een link met de class "nav-link" wordt geklikt...
+  
+        $('.navbar-collapse').collapse('hide');
+        // verberg het hamburgermenu door de class "navbar-collapse" te selecteren
+        // en de "collapse('hide')" methode toe te passen.
+      });
     });
-  });
   </script>
+  
 
 </body>
 </html>

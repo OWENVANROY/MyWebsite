@@ -1,5 +1,4 @@
 
-//if(window.innerWidth<700){
 /*aanmaken en definieren van het canvas*/
 const canvas = document.querySelector(".canvas");
 canvas.width = window.innerWidth/2;
@@ -18,6 +17,8 @@ const currentFrame = (index) => `./images/lamp/${(index + 1).toString()}.png`;
 
 /* nieuwe lege lijst aanmaken, waarin alle fotos in geplaatst kunnen worden*/
 const images = [];
+
+/*zorgt ervoor dat de frames op de eerste foto starten */
 let ball = { frame: 0 };
 
 
@@ -51,6 +52,3 @@ function render() {
   context.clearRect(0, 0, canvas.width, canvas.height);
   context.drawImage(images[ball.frame], (canvas.width-images[0].width)/2, (canvas.height-images[0].height)/2);
 }
-//} else{
-  document.getElementById(vervangAfbeelding).src ="images/lamp/45"
-//}
